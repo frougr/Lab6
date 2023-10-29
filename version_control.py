@@ -12,9 +12,10 @@ def main():
             # Takes password and stores encoded input
             password = input("Please enter your password to encode: ")
             encoded = encode(password)
+            print("Your password has been encoded and stored!\n")
         elif option == '2':
             # Shows user encoded and decoded string
-            print(f"The encoded password is {encoded}, and the original password is {decode(encoded)}.")
+            print(f"The encoded password is {encoded}, and the original password is {decode(encoded)}.\n")
         elif option == '3':
             break
         print_menu()
@@ -26,7 +27,7 @@ def print_menu():
     print("-" * 13)
     print("1. Encode\n"
           "2. Decode\n"
-          "3. Quit")
+          "3. Quit\n")
 
 
 def encode(string):
