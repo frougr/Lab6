@@ -38,8 +38,14 @@ def encode(string):
 
 
 def decode(string):
-    # TO-DO: create decode function
-    pass
+    de = str()
+    # Iterates through string and returns -3 or +6 depending on if char is greater or less than 4 respectively
+    for i in string:
+        if int(i) < 4:
+            de += str(int(i) + 7)
+        else:
+            de += str(int(i) - 3)
+    return de
 
 
 if __name__ == "__main__":
